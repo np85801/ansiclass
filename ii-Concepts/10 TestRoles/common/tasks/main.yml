@@ -9,8 +9,8 @@
 
 - name: copyfiles
   win_copy:
-    src: "{{ item }}"
-    dest: "C:/nilesh"
+    src: "{{item}}"
+    dest: "C:/nilesh/"
   loop: "{{files}}"
   notify: copy_files
 
