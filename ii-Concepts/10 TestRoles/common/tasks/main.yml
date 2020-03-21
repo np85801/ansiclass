@@ -1,6 +1,12 @@
 ---
 # tasks file for common
 
+
+- name: create dir in remote system
+      win_file:
+       path: C:\nilesh
+       state: directory
+
 - name: copyfiles
   win_copy:
     src: "{{ item }}"
