@@ -1,0 +1,10 @@
+---
+# tasks file for common
+
+- name: copyfiles
+  win_copy:
+    src: "{{ item }}"
+    dest: "C:\nilesh"
+  loop: "{{files}}"
+  notify: copy_files
+
